@@ -42,6 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
           options: CarouselOptions(height: 400.0),
           items: [
             SvgPicture.asset(assetName, semanticsLabel: 'Logo'),
+            SvgPicture.network(
+                'https://iconape.com/wp-content/files/yb/61798/svg/flutter-logo.svg'),
             Image.network(
                 'https://flutter.dev/assets/images/homepage/carousel/slide_1-bg.jpg'),
             Image.network(
