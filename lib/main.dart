@@ -39,10 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: CarouselSlider(
-          options: CarouselOptions(
-            height: 400.0,
-            aspectRatio: 16 / 9,
-          ),
+          options: CarouselOptions(height: 400.0),
           items: [
             SvgPicture.asset(assetName, semanticsLabel: 'Logo'),
             Image.network(
@@ -59,7 +56,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 return Container(
                   width: MediaQuery.of(context).size.width,
                   margin: const EdgeInsets.symmetric(horizontal: 5.0),
-                  decoration: const BoxDecoration(color: Colors.amber),
                   child: i,
                 );
               },
